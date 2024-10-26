@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="estilos/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Clima</title>
+</head>
+<body>
+    <main>
+        <div id="busca">
+            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/visit.png" alt="visit"/>
+
+            <input type="text" name="local" id="local" placeholder="localização" autocomplete="off">
+
+            <img width="24" height="24" id="lupa" src="https://img.icons8.com/ios-glyphs/24/FFFFFF/search--v1.png" alt="search--v1" onclick="encontrarCidade()"/>
+        </div>
+        <div id="dados" style="display: none;">
+
+            <div id="infoPrincipal">
+
+                <div id="infoClima">
+                    <div id="imagemClima"></div>
+                </div>
+
+                <div class="infoGeral infoClima" id="tempAtual">
+                    <p id="celsius"><span id="tempCelsius"></span> ºC</p>
+                </div>
+
+                <div id="sensTermica">
+                    <p>Sensação térmica:</p>
+                    <span id="tempSens"></span>
+                </div>
+
+            </div>
+
+            <div class="infoAdicional">
+
+                <div id="Vento" class="infoAdicional">
+
+                    <img width="60" height="60" src="https://img.icons8.com/stickers/40/wind.png" alt="wind"/>
+
+                    <p><span id="velocVento" style="font-size: 12px;"></span> Vento</p>
+
+                    
+
+                </div>
+
+                <div id="umidadeTempo" class="infoAdicional">
+
+                    <img width="60" height="60" src="https://img.icons8.com/office/40/humidity.png" alt="humidity"/>
+
+                    <p><span id="umidade" style="font-size: 12px;"></span> Umidade</p>
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
