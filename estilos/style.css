@@ -26,7 +26,7 @@ main {
     flex-direction: row;
     border: 2px solid rgba(0, 0, 0, 0.592);
     border-radius: 20px;
-    backdrop-filter: blur(25px);
+    background-color: rgba(45, 27, 208, 0.8);
     width: calc(100vw - 300px);
     min-width: 300px;
     max-width: 400px;
